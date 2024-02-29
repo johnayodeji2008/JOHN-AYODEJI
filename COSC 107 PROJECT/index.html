@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iphone Giveaway</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body" style="margin-top: 100px; margin-left: 100px; align-items: center;">
+    <div while>
+    <!--image, the article tag is used to define a self contained content while section is used to define a section in a document-->
+    <sections class="countdown">
+        <div class="whole">
+        <article class="iphone">
+            <img src="images/iphone.jpg" alt="iphone15" id="pics" style="width: 500px; height: 330px; border-radius: 5px;
+             margin-right: 50px;">
+        </article>
+
+        <article class="text">
+            <!--texts-->
+            <div class="hush">
+            <h3 class="old">OLD IPHONE GIVEAWAY</h3>
+            <h4 class="daywd" id="homes"></h4>
+            <p class="lorem">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                 Neque, soluta accusantium harum porro quod accusamus<br> sunt 
+                 voluptatibus cum dolor itaque facere, corrupti minus<br> placeat, 
+                tempore sapiente? Quisquam eligendi soluta eaque.
+            </p>
+            </div>
+            <!--timer container, the span tag is used to apply styles to a specific section-->
+            <!--days-->
+            <div class="timerbox">
+            <div class="timer">
+                <p id="days">00</p>
+                <span>DAYS</span>
+            </div>
+            <!--hours-->
+            <div class="timer">
+                <p id="hours">00</p>
+                <span>HOURS</span>
+            </div>
+            <!--minutes-->
+            <div class="timer">
+                <p id="minutes">00</p>
+                <span>MINS</span>
+            </div>
+            <!--secs-->
+            <div class="timer">
+                <p id="seconds">00</p>
+                <span>SECS</span>
+            </div>
+            </div>
+        </article>
+        </div>
+    </sections>
+    </div>
+    <script src="timer.js"></script>
+    <script>
+        function displayTargetDateTime() {
+    var targetDateTime = new Date();
+    targetDateTime.setDate(targetDateTime.getDate() + 10); 
+
+    var targetDateTimeElement = document.getElementById('homes');
+    var formattedDateTime = targetDateTime.toLocaleDateString('en-US', {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'}) + " " +
+                            targetDateTime.toLocaleTimeString('en-US', {hour: '2-digit', minute:'2-digit'});
+    targetDateTimeElement.textContent = "Giveaway Ends on " + formattedDateTime;
+}
+
+window.onload = displayTargetDateTime;
+    </script>
+</body>
+</html>

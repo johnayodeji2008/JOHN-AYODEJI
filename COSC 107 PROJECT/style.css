@@ -1,0 +1,75 @@
+.body {
+    background-color: rgb(174, 225, 255);
+}
+
+.old{
+    color: rgba(0, 160, 225, 1);
+    font-size: 29px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.timer{
+    background-color: #00008B;
+    border: 5px;
+    padding: 3px;
+    border-radius: 5px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    margin-right: 15px;
+    box-shadow: 2px 2px 10px #00008B;
+}
+
+.timerbox{
+    display: flex;
+}
+
+.whole{
+    display: flex;
+}
+
+
+
+.lorem{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.enddate{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@media screen and (max-width: 600px){
+    .whole{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+.while{
+    border: 5px;
+    padding: 5px;
+    align-items: center;
+}
+
+.daywd{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+span{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#days, #hours, #minutes, #seconds{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+} 
